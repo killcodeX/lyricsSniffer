@@ -4,9 +4,9 @@ import './nav.css';
 export default function Nav() {
     return (
         <div>
-            <nav class="navbar is-info" role="navigation" aria-label="main navigation">
-                <div class="navbar-brand">
-                    <a class="navbar-item" href='#'> Lyrics Sniffer
+            <nav className="navbar is-info" role="navigation" aria-label="main navigation">
+                <div className="navbar-brand">
+                    <a className="navbar-item" href='#'> Lyrics Sniffer  <i className="fas fa-music"></i>
                     {/* <img src='' width="40" height="90"/> */}
                     </a>
 
