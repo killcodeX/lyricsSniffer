@@ -11,10 +11,12 @@ function App() {
       <Router>
         <React.Fragment>
           <Nav />
-          <div className='container'>
-            <Switch>
-              <Route exact path='/' component={Index}></Route>
-            </Switch>
+          <div className='section'>
+            <div className='container'>
+              <Switch>
+                <Route exact path='/' component={Index}></Route>
+              </Switch>
+            </div>
           </div>
         </React.Fragment>
       </Router>
