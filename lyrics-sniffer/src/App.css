@@ -20,3 +20,9 @@
 .back{
   margin-bottom: 40px;
 }
+
+@media(max-width:480px){
+  #lyrics{
+    height: max-content;
+  }
+}
