@@ -5,10 +5,10 @@
 }
 
 /* for tracks1 */
-.card{
+#tracks{
   transition: transform 0.5s ease;
 }
-.card:hover{
+#tracks:hover{
   cursor: pointer;
   transform: translateY(-10px);
 }
@@ -25,4 +25,16 @@
   #lyrics{
     height: max-content;
   }
+}
+
+/* for search card */
+#search{
+  margin-bottom: 100px;
+}
+
+#sub{
+  margin-top: 20px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
 }
