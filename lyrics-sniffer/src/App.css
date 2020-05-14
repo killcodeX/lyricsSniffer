@@ -1,5 +1,5 @@
 /* for app js */
-.section{
+#app{
   background-color: #f2f2f5;
   height: max-content;
 }
@@ -11,4 +11,12 @@
 .card:hover{
   cursor: pointer;
   transform: translateY(-10px);
+}
+
+/* for lyrics */
+#lyrics{
+  height: 90vh;
+}
+.back{
+  margin-bottom: 40px;
 }
