@@ -5,20 +5,20 @@ import { Consumer } from '../../context';
 export default class Search extends Component {
 
     state ={
-        trackTitles: ''
+        trackTitle: ''
     };
 
     findTrack = (dispatch, e) => {
         e.preventDefault();
 
-        axios.get(`https://cors-anywhere.herokuapp.com/http://api.musixmatch.com/ws/1.1/track.search?q_track=${this.trackTitles}&page_size=10&page=1&s_track_rating=desc&apikey=${process.env.REACT_APP_MM_KEY}`)
+        axios.get(`https://cors-anywhere.herokuapp.com/http://api.musixmatch.com/ws/1.1/track.search?q_track=${this.state.trackTitle}&page_size=10&page=1&s_track_rating=desc&apikey=${process.env.REACT_APP_MM_KEY}`)
             .then(res => {
                 dispatch({
                     type: 'SEARCH_TRACKS',
                     payload: res.data.message.body.track_list
                 });
-                
-                this.setState({ trackTitles : '' })
+                console.log(res.data.message.body.track_list)
+                this.setState({ trackTitle : '' })
             })
             .catch(err => console.log(err));
     }
@@ -41,7 +41,7 @@ export default class Search extends Component {
                                 <p className='title is-5 has-text-centered'>Get the lyrics of any Songs</p>
                                 <form className='has-text-centered' onSubmit={this.findTrack.bind(this, dispatch)}>
                                     <div class="control has-icons-left has-icons-right">
-                                        <input class="input" type="text" placeholder="Song title..." name={this.trackTitles} onChange={this.onChange}/>
+                                        <input class="input" type="text" placeholder="Song title..." name="trackTitle" value={this.state.trackTitle} onChange={this.onChange}/>
                                         <span class="icon is-small is-right">
                                             <i class="fas fa-search"></i>
                                         </span>
