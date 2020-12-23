@@ -25,7 +25,7 @@ http://localhost:3000
  * Context Api
 
 ## Live Demo
-You can also check the demo on [GitHub Jobs](https://lyricssniffer.netlify.app)
+You can also check the demo on [Lyrics Sniffer](https://lyricssniffer.netlify.app)
 
 ## ScreenShots
 ![Lyrics Sniffer](https://github.com/killcodeX/lyricsSniffer/blob/master/lyrics-sniffer/public/screen.png)
