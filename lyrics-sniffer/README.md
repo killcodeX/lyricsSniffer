@@ -28,4 +28,4 @@ http://localhost:3000
 You can also check the demo on [GitHub Jobs](https://lyricssniffer.netlify.app)
 
 ## ScreenShots
-![Lyrics Sniffer](https://github.com/killcodeX/spaceXhistory/blob/master/public/spaceship.png)
+![Lyrics Sniffer](https://github.com/killcodeX/lyricsSniffer/blob/master/lyrics-sniffer/public/screen.png)
